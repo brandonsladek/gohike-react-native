@@ -3,6 +3,7 @@
 import React, {Component} from 'react';
 import {Text, StyleSheet, View} from 'react-native';
 import Swiper from 'react-native-swiper';
+import HikeCollection from '../components/HikeCollection';
 
 var styles = StyleSheet.create({
   container: {
@@ -38,8 +39,6 @@ export default class Main extends React.Component {
 
   render() {
     return (
-      //<View><Text>main screen</Text></View>
-
       <Swiper
         loop={true}
         showsPagination={false}
@@ -47,14 +46,13 @@ export default class Main extends React.Component {
         <View style={this.viewStyle()}>
           <TitleText label="Profile" />
         </View>
-        <View style={this.viewStyle()}>
+        <HikeCollection>
           <TitleText label="Hikes" />
-        </View>
+        </HikeCollection>
         <View style={this.viewStyle()}>
           <TitleText label="Rankings" />
         </View>
       </Swiper>
-
     )
   }
 }
