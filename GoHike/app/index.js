@@ -1,8 +1,16 @@
+'use strict';
+
 import { Navigation } from 'react-native-navigation';
 import LandingScreen from './screens/LandingScreen';
+import LoginScreen from './screens/LoginScreen';
+import CreateAccountScreen from './screens/CreateAccountScreen';
+import MainScreen from './screens/MainScreen';
 
 export default () => {
   Navigation.registerComponent('LandingScreen', () => LandingScreen);
+  Navigation.registerComponent('LoginScreen', () => LoginScreen);
+  Navigation.registerComponent('CreateAccountScreen', () => CreateAccountScreen);
+  Navigation.registerComponent('MainScreen', () => MainScreen);
 
   Navigation.startSingleScreenApp({
     screen: {

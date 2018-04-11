@@ -27,9 +27,7 @@ export default class LoginScreen extends Component<{}> {
     console.log('Login button pressed');
     this._checkLoginCredentials();
     this.props.navigator.push({
-        title: 'Main',
-        component: MainScreen,
-        passProps: {}
+        screen: 'MainScreen'
       });
   };
 

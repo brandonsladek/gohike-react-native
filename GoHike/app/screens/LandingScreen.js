@@ -23,8 +23,7 @@ export default class LandingScreen extends Component<{}> {
     console.log('Login pressed');
     this.props.navigator.push({
         title: 'Login',
-        component: LoginScreen,
-        passProps: {}
+        screen: 'LoginScreen'
       });
   };
 
@@ -32,8 +31,7 @@ export default class LandingScreen extends Component<{}> {
     console.log('Create account pressed');
     this.props.navigator.push({
         title: 'Create Account',
-        component: CreateAccountScreen,
-        passProps: {}
+        screen: 'CreateAccountScreen'
       });
   };
 
