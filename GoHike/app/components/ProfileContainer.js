@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import {View, Text} from 'react-native';
 
-export default class HikeCollection extends Component {
+export default class ProfileContainer extends Component {
 
   constructor(props) {
     super(props);
@@ -21,7 +21,7 @@ export default class HikeCollection extends Component {
   render() {
     return (
       <View style={this.viewStyle()}>
-        <Text>Hikes</Text>
+        <Text>Profile</Text>
       </View>
     )
   }

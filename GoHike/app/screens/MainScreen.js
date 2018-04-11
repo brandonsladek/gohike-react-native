@@ -4,6 +4,8 @@ import React, {Component} from 'react';
 import {Text, StyleSheet, View} from 'react-native';
 import Swiper from 'react-native-swiper';
 import HikeCollection from '../components/HikeCollection';
+import RankingsContainer from '../components/RankingsContainer';
+import ProfileContainer from '../components/ProfileContainer';
 
 var styles = StyleSheet.create({
   container: {
@@ -27,31 +29,22 @@ class TitleText extends React.Component {
 }
 
 export default class Main extends React.Component {
-
-  viewStyle() {
-    return {
-      flex: 1,
-      backgroundColor: 'green',
-      justifyContent: 'center',
-      alignItems: 'center',
-    }
-  }
-
+  
   render() {
     return (
       <Swiper
         loop={true}
         showsPagination={false}
         index={1}>
-        <View style={this.viewStyle()}>
+        <ProfileContainer>
           <TitleText label="Profile" />
-        </View>
+        </ProfileContainer>
         <HikeCollection>
           <TitleText label="Hikes" />
         </HikeCollection>
-        <View style={this.viewStyle()}>
+        <RankingsContainer>
           <TitleText label="Rankings" />
-        </View>
+        </RankingsContainer>
       </Swiper>
     )
   }
