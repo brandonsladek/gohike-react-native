@@ -2,7 +2,7 @@
 
 import React, {Component} from 'react';
 import {Text, StyleSheet, View} from 'react-native';
-//import Swiper from 'react-native-swiper';
+import Swiper from 'react-native-swiper';
 
 var styles = StyleSheet.create({
   container: {
@@ -38,8 +38,8 @@ export default class Main extends React.Component {
 
   render() {
     return (
-      <View><Text>main screen</Text></View>
-      /*
+      //<View><Text>main screen</Text></View>
+
       <Swiper
         loop={true}
         showsPagination={false}
@@ -54,7 +54,7 @@ export default class Main extends React.Component {
           <TitleText label="Rankings" />
         </View>
       </Swiper>
-      */
+
     )
   }
 }
